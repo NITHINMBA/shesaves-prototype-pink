@@ -26,13 +26,12 @@ const HomeTab = () => {
         <h1 className="text-2xl font-bold text-foreground mb-2">
           Hello, Chithra! 👋
         </h1>
-        <p className="text-muted-foreground">Welcome back to your savings journey</p>
       </div>
 
       {/* Balance Card */}
       <Card className="p-6 bg-gradient-primary text-white shadow-soft">
         <div className="text-center">
-          <p className="text-white/80 text-sm mb-2">Total Savings</p>
+          <p className="text-white/80 text-sm mb-2">Current Savings (Rupees)</p>
           <h2 className="text-4xl font-bold mb-6">₹1,50,000</h2>
           
           <div className="grid grid-cols-2 gap-4">
@@ -74,7 +73,7 @@ const HomeTab = () => {
 
             <Dialog open={withdrawMoneyOpen} onOpenChange={setWithdrawMoneyOpen}>
               <DialogTrigger asChild>
-                <Button variant="outline" className="h-12 rounded-xl font-semibold border-white text-white hover:bg-white hover:text-primary">
+                <Button variant="secondary" className="h-12 rounded-xl font-semibold">
                   <Minus className="h-5 w-5 mr-2" />
                   Withdraw
                 </Button>
@@ -149,6 +148,49 @@ const HomeTab = () => {
             ))}
           </div>
         )}
+      </div>
+
+      {/* Educational Content */}
+      <div className="space-y-4">
+        <h3 className="text-lg font-semibold text-foreground">Learn Invest Easily in Your Local Language</h3>
+        
+        <div className="grid grid-cols-1 gap-4">
+          <Card className="p-4 bg-accent/30 hover:bg-accent/50 transition-colors cursor-pointer">
+            <div className="flex items-center space-x-4">
+              <div className="w-16 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">VIDEO</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-medium text-foreground">How to Invest in Mutual Funds</h4>
+                <p className="text-sm text-muted-foreground">Learn step-by-step process</p>
+              </div>
+            </div>
+          </Card>
+          
+          <Card className="p-4 bg-accent/30 hover:bg-accent/50 transition-colors cursor-pointer">
+            <div className="flex items-center space-x-4">
+              <div className="w-16 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">VIDEO</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-medium text-foreground">How to Invest in Fixed Deposits</h4>
+                <p className="text-sm text-muted-foreground">Safe investment options</p>
+              </div>
+            </div>
+          </Card>
+          
+          <Card className="p-4 bg-accent/30 hover:bg-accent/50 transition-colors cursor-pointer">
+            <div className="flex items-center space-x-4">
+              <div className="w-16 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">VIDEO</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-medium text-foreground">SIP Investment Guide</h4>
+                <p className="text-sm text-muted-foreground">Monthly investment tips</p>
+              </div>
+            </div>
+          </Card>
+        </div>
       </div>
     </div>
   );
