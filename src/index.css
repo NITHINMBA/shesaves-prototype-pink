@@ -17,24 +17,41 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* SheSaves Pink Theme */
+    --primary: 330 100% 71%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 330 100% 85%;
+    --primary-dark: 330 100% 60%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 330 25% 96%;
+    --secondary-foreground: 330 100% 30%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 330 15% 96%;
+    --muted-foreground: 330 25% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 330 100% 95%;
+    --accent-foreground: 330 100% 40%;
+
+    --success: 150 100% 35%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 35 100% 50%;
+    --warning-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 330 20% 90%;
+    --input: 330 20% 94%;
+    --ring: 330 100% 71%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-soft: linear-gradient(180deg, hsl(var(--background)), hsl(var(--accent)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -5px hsl(var(--primary) / 0.2);
+    --shadow-card: 0 2px 10px -2px hsl(var(--primary) / 0.1);
 
     --radius: 0.5rem;
 
